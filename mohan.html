@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOHAN</title>
+    <link rel="stylesheet" href="mohan.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+         <div class="container">
+            <nav>
+                <img src="images/loo.jpg" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#Education">Education</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                    <li><a href="#contact">About</a></li>                  
+                </ul>
+            </nav>
+
+ 
+
+
+
+
+
+            <div class="Mohan">
+                <p>Student</p>
+                <h1>Hi, I'm <span>MohanKumar</span><br> From Kiot</h1>
+            </div>
+         </div>   
+    </div>
+<!-- ---------Education--------- -->
+    <div id="Education">
+        <div class="container">
+            <div class="row">
+                <div class="Education-col-1">
+                    <img src="images/kkiot.jpg">
+                </div>
+                <div class="Education-col-2">
+                    <h1 class="sub-title">Education</h1>
+                    <p> I am interesting in learning something<br>
+
+                    </p>
+
+                  <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('School')">School</p>
+                    <p class="tab-links" onclick="opentab('College')">College</p>
+                  </div>
+
+                 <div class="tab-contents active-tab" id="School">
+                    <ul>
+                        <li><span>2019</span><br>10<sup>th</sup>    75 Percentage  G.B.H.sec school</li>
+                        <li><span>2021</span><br>12<sup>th</sup>    85 Percentage  G.B.H.sec school</li>
+                    </ul>
+
+                 </div>  
+
+                 <div class="tab-contents" id="College">
+                    <ul>
+                        <li><span>2021-2022</span><br>I<sup>st</sup>sem   7.5CGPA<br>II<sup>nd</sup>sem   7.7CGPA</li>
+                        <li><span>2022-2023</span><br>III<sup>rd</sup>sem    8.2CGPA<br>IV<sup>th</sup>sem   8.3CGPA</li>
+                    </ul>
+
+                 </div>  
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--- skill-->
+<div id="skill">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="skill-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <li>Html</li>
+                <li>css</li>
+                <li>java script basic</li>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Programming Skills</h2>
+                <li>c</li>
+                <li>python</li>
+                <li>java</li>
+                <li>Machine learning</li>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Languages</h2>
+                <li>Tamil</li>
+                <li>English</li>
+                <li>Japanese (n5)</li>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+
+<!-------About------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+<h1 class="sub-title">About Me</h1>
+<p><i class="fas fa-paper-plane"></i>2k21csbs35@kiot.ac.in</p>
+<p ><i class="fas fa-phone-square-alt"></i>9677361526</p>
+<div class="social-icons">
+    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+    <a href=""><i class="fab fa-linkedin"></i></a>
+    <a href=""><i class="fab fa-whatsapp"></i></a>
+    <a href=""><i class="fab fa-twitter"></i></a>
+    <a href=""><i class="fab fa-telegram"></i></a>
+</div>
+            </div>
+            <div class="contact-right">
+                
+                <p id="msg">Thankyou</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
